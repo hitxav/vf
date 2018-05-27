@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="v.css">
+    <title>Validation Form</title>
+
+</head>
+
+
+
+<body>
+    
+<h1>REGISTRATION FORM</h1>
+    <p >
+        <form>
+            
+                <p class="one" >Username: &nbsp<input id="username" name="username" type="text" placeholder="Enter Username" onblur="checkusername()">
+                    <br/>
+                    <div id="name"></div>
+                </p>
+          
+          
+                <p class="one">Password: &nbsp <input type="password" name="password" id="password" placeholder="Enter password" onblur="checkpassword()">
+                    <br/>
+                    <div id="pass"></div>
+                </p>
+            
+                <p class="one">Email: &nbsp &nbsp &nbsp &nbsp &nbsp<input id="Email" name="Email" type="text" placeholder="Enter Email" onblur="checkemail()">
+                    <br/>
+                    <div id="mail"></div>
+                </p>
+    
+            
+                <p class="one">Age: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input id="Age" name="Age" type="number" placeholder="Enter Age" onblur="checkage()">
+                    <br/>
+                    <div id="age"></div>
+                </p>
+            
+            <div class="button">
+                <input type="Submit" onclick="check()">
+                <input type="reset">
+            </div>
+        </form>
+    </p>
+    <script src="v.js"></script>
+</body>
+</html>

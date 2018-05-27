@@ -1,0 +1,12 @@
+form{
+height:500px;
+  width:500px;
+  
+  margin:auto;
+}
+
+.warning_msg{
+  color: #ae0000;
+  margin: 3px 0px 0px 5px;
+}
+

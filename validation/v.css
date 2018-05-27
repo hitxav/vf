@@ -1,0 +1,14 @@
+.one{
+	font-weight: bolder;
+}
+body{
+	position: fixed;
+	top:20%;
+	left:40%;
+	
+}
+
+h1{
+		border-bottom:1px solid black;
+		color:blue;
+	}

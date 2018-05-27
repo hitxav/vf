@@ -1,0 +1,90 @@
+ function check() {
+        var name = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        var mail = document.getElementById("Email").value;
+        var age = document.getElementById("Age").value;
+        if (name ===""||pass===""||mail===""||age==="")
+        {
+            alert("Please fill data correctly");
+        }
+        else
+        {
+            alert("Success");
+        }
+    }
+    function checkusername() {
+        var name=document.getElementById("username").value;
+                      if(name==="")
+                {
+                    document.getElementById("name").innerHTML="Username cannot be empty";
+                
+                    
+                }
+                else if(name.length<3)
+                {
+                    document.getElementById("name").innerHTML="Username should contain minimum 3 characters";
+                }
+                else
+                {
+                    document.getElementById("name").innerHTML="";
+                }
+            return true;
+}
+    function checkpassword() {
+
+        var pass = document.getElementById("password").value;
+        if (pass ==="") {
+            document.getElementById("pass").innerHTML = "Password field is empty";
+            return true;
+        } else if (pass.length <= 6) {
+            document.getElementById("pass").innerHTML = "Password field must contain 6 characters";
+            return true;
+        } else if (pass.length >= 6) {
+            var n = 0,
+                c = 0,
+                l, i = 0;
+            l = pass.length;
+            for (i = 0; i < l; i++) {
+                if (pass.charAt(i) >= '0' && pass.charAt(i) <= '9')
+                    n++;
+                if (pass.charAt(i) >= 'a' && pass.charAt(i) <= 'z')
+                    c++;
+                if (pass.charAt(i) >= 'A' && pass.charAt(i) <= 'Z')
+                    c++;
+                if (n == 0 || c == 0) {
+                    document.getElementById("pass").innerHTML = "Password must contains both number and alphabets";
+                } else
+                    document.getElementById("pass").innerHTML = "";
+            }
+        }
+    }
+
+    function checkemail() {
+        var email = document.getElementById("Email").value;
+        if(email==="")
+        {
+            document.getElementById("mail").innerHTML="Email cannot be left empty";
+        }
+        else if(email.indexOf("@")>-1&&email.indexOf(".")>-1)
+                {
+                    document.getElementById("mail").innerHTML="";
+                }
+                else
+                {
+                document.getElementById("mail").innerHTML="Please enter correct mail id";  
+                }
+                return true;
+
+    }
+
+    function checkage() {
+        var age=document.getElementById("Age").value;
+        if(age>=10&&age<90){
+                document.getElementById("age").innerHTML="";
+                }
+                else
+                {
+                    document.getElementById("age").innerHTML="Age should be between 10 and 90";  
+            }
+            return true;
+    }
